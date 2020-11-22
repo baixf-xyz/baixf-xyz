@@ -21,6 +21,7 @@
 [![](https://img.shields.io/badge/-Python-blue?style=flat-square&logo=Python&logoColor=ffffff)](https://www.python.org/)
 [![](https://img.shields.io/badge/-Spring-green?style=flat-square&logo=Spring&logoColor=ffffff)](https://spring.io/)
 [![](https://img.shields.io/badge/-Markdown-inactive?style=flat-square&logo=Markdown&logoColor=ffffff)](https://markdown-here.com)
+[![](https://img.shields.io/badge/-LaTeX-green?style=flat-square&logo=LaTeX&logoColor=ffffff)](https://www.latex-project.org/)
 [![](https://img.shields.io/badge/Honor-V10-f5010c?style=flat-square&logo=huawei&logoColor=ffffff)](https://www.huawei.com/)
 
 [![](https://img.shields.io/badge/-Adobe-red?style=flat-square&logo=Adobe&logoColor=ffffff)](https://www.adobe.com)
