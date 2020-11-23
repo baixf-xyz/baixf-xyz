@@ -2,7 +2,7 @@
 
 #### You can catch me:
 
-##### [INDEX传送门](https://baixf.tk)    [BLOG传送门](https://blog.baixf.tk)
+##### [INDEX传送门](https://baixf.tk)         [BLOG传送门](https://blog.baixf.tk)
 
 ![](http://antzuhl.cn:4000/get/@baixf-xyz.readme)
 
