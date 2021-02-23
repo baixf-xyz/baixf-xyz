@@ -1,4 +1,3 @@
-window.onload = function() {
 document.onkeydown = function() {
 	var e = window.event || arguments[0];
 	if (e.keyCode == 123) {
@@ -19,5 +18,4 @@ document.onkeydown = function() {
 document.oncontextmenu = function() {
 	//alert('禁止右键');
 	return false;
-}
 }
