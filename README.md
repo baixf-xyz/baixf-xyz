@@ -6,7 +6,7 @@
 
 ##### [INDEX传送门](https://baixf.tk)         [BLOG传送门](https://blog.baixf.tk)
 
-![](http://antzuhl.cn:4000/get/@baixf-xyz.readme)
+![](https://gitee.com/bai_xiao_fei/picture/raw/master/pic//@baixf-xyz.readme)<br/>
 
 ![](https://visitor-badge.glitch.me/badge?page_id=baixf-xyz.readme)
 
