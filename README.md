@@ -6,7 +6,7 @@
 
 ##### [INDEX传送门](https://baixf.tk)         [BLOG传送门](https://blog.baixf.tk)
 
-![](https://api.moedog.org/count/@baixf-xyz.readme)<br/>
+![](https://api.moedog.org/count/@baixf-xyz.readme)
 
 ![](https://visitor-badge.glitch.me/badge?page_id=baixf-xyz.readme)
 
