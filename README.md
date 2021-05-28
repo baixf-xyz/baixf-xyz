@@ -12,7 +12,7 @@
 
 ![info](https://github-readme-stats.vercel.app/api?username=baixf-xyz&show_icons=true&count_private=true&hide=prs&theme=default_repocard)
 
-
+![](https://komarev.com/ghpvc/?username=baixf-xyz&color=dc143c)
 
 [![](https://img.shields.io/badge/OS-Linux-blue?style=flat-square&logo=arch-linux&logoColor=ffffff)](https://www.archlinux.org/)
 [![](https://img.shields.io/badge/-Raspberry%20Pi%20%204B-red?style=plastic-square&logo=Raspberry-Pi&logoColor=ffffff)](https://www.raspberrypi.org/)
