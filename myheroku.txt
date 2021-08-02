@@ -1,0 +1,2 @@
+vmess://YXV0bzpkYWY3MjUxYS0yZmY1LTQ0MTUtODg4OC0wMDk0NjU0NDQ1OThAMTA0LjE5LjI2LjExNjo0NDM?remarks=heroku%E6%88%91%E5%AE%B6%E6%9C%80%E5%BF%AB&obfsParam=heroku.707401057.workers.dev&path=/&obfs=websocket&tls=1&alterId=64
+vmess://YXV0bzpiYTMyOTUxOC03ZmZiLTRlYzItYmU4ZS1hN2E1ZjhiMzQ4YzlAMTA0LjE5Ljg0LjE1Mzo0NDM?remarks=euheroku&obfsParam=eheroku.707401057.workers.dev&path=/&obfs=websocket&tls=1&alterId=64
