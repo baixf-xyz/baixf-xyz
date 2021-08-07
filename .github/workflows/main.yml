@@ -31,8 +31,7 @@ jobs:
         git config --global user.name baixf-xyz
         git add .
         git commit -m "update"
-
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.BGITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
