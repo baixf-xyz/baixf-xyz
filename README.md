@@ -8,11 +8,9 @@
 
 ### 🎨 Latest blogs
 
-- [玩转树莓派[13在Docker 中运行 OpenWrt 旁路网关]](https://java8.ml/2021/07/24/raspberry/%E7%8E%A9%E8%BD%AC%E6%A0%91%E8%8E%93%E6%B4%BE%5B13%E5%9C%A8Docker%20%E4%B8%AD%E8%BF%90%E8%A1%8C%20OpenWrt%20%E6%97%81%E8%B7%AF%E7%BD%91%E5%85%B3%5D/)
-- [玩转树莓派[12树莓派直刷 OpenWrt 做旁路网关]](https://java8.ml/2021/07/14/raspberry/%E7%8E%A9%E8%BD%AC%E6%A0%91%E8%8E%93%E6%B4%BE%5B12%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9B%B4%E5%88%B7%20OpenWrt%20%E5%81%9A%E6%97%81%E8%B7%AF%E7%BD%91%E5%85%B3%5D/)
-- [Github Pages 和 Hexo 搭建自己的私服博客](https://java8.ml/2021/07/09/git/%E4%BD%BF%E7%94%A8Github%20Actions%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2Hexo/)
 
-[>>> More]({https://java8.ml/archives/)
+
+[>>> More](https://java8.ml/archives/)
 
 ![](https://api.moedog.org/count/@baixf-xyz.readme)
 
@@ -40,10 +38,4 @@
 [![](https://img.shields.io/badge/-Adobe%20Premiere%20Pro-blueviolet?style=flat-square&logo=Adobe-Premiere-Pro&logoColor=ffffff)](https://www.adobe.com/cn/products/premiere.html)
 [![](https://img.shields.io/badge/-Adobe%20After%20Effects-informational?style=flat-square&logo=Adobe-After-Effects&logoColor=ffffff)](https://www.adobe.com/cn/products/aftereffects.html)
 [![](https://img.shields.io/badge/-Adobe%20Audition-blue?style=flat-square&logo=Adobe-Audition&logoColor=ffffff)](https://www.adobe.com/cn/products/audition.html)
-
-
-
-
-
-
 
