@@ -1,4 +1,17 @@
-### Welcome To My Github 👋
+import requests
+from lxml import etree
+
+
+url = "https://raw.githubusercontent.com/baixf-xyz/baixf-xyz.github.io/master/index.html"
+domain = "https://java8.ml"
+page_res = requests.get(url)
+html = etree.HTML(page_res.text)
+url_list = [f'{domain}{i}' for i in html.xpath('//div[@class="list-group"]/a/@href')]
+title_list = html.xpath('//div[@class="list-group"]/a/span/text()')
+post_list = [f"- [{post[1]}]({post[0]})" for post in zip(url_list, title_list)]
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(f'''### Welcome To My Github 👋
 
 ![今日诗词](https://v2.jinrishici.com/one.svg)
 
@@ -8,6 +21,9 @@
 
 #### 🎨 Latest blogs
 
+''')
+    f.write('\n'.join(post_list[:3]))
+    f.write(f'''
 
 [>>> More]({domain}/archives/)
 
@@ -38,9 +54,4 @@
 [![](https://img.shields.io/badge/-Adobe%20After%20Effects-informational?style=flat-square&logo=Adobe-After-Effects&logoColor=ffffff)](https://www.adobe.com/cn/products/aftereffects.html)
 [![](https://img.shields.io/badge/-Adobe%20Audition-blue?style=flat-square&logo=Adobe-Audition&logoColor=ffffff)](https://www.adobe.com/cn/products/audition.html)
 
-
-
-
-
-
-
+''')
