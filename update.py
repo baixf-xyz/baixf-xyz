@@ -19,7 +19,7 @@ with open('README.md', 'w', encoding='utf-8') as f:
 
 ##### [INDEX传送门](https://baixf.tk)         [BLOG传送门](https://blog.baixf.tk)
 
-#### 🎨 Latest blogs
+### 🎨 Latest blogs
 
 ''')
     f.write('\n'.join(post_list[:3]))
