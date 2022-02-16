@@ -44,7 +44,7 @@
 
 ### GitHub Action 补充说明
 
-* 利用 Github Action 提交代码需要一个 GitHub API 令牌, 可以在 [Create Tokens]() 这个地址，点击 **Generate new token** 按钮来创建
+* 利用 Github Action 提交代码需要一个 GitHub API 令牌, 可以在 [Create Tokens](https://github.com/settings/tokens) 这个地址，点击 **Generate new token** 按钮来创建
 
 * **Expiration** 过期时间设置为 **not expiration**
   * **Select scopes** 勾选 **repo**
