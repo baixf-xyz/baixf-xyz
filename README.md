@@ -1,47 +1,40 @@
-[![Website](https://img.shields.io/website-up-down-green-red/http/i.dmego.cn.svg)](http://i.dmego.cn/)
-[![License](https://img.shields.io/github/license/dmego/home.github.io.svg)](/LICENSE)
-[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/dmego)
+![今日诗词](https://v2.jinrishici.com/one.svg)
 
-### 个人主页
+### Welcome To My Github 👋
 
->这是我的个人主页
+#### You can catch me:
 
->衍生自 [Vno](https://github.com/onevcat/vno-jekyll) Jekyll 主题
+##### [INDEX传送门](https://baixf.tk)         [BLOG传送门](https://blog.baixf.tk)
 
->页面部分加载效果借鉴于 [Mno](https://github.com/mcc108/mno) Ghost 主题
+![](https://api.moedog.org/count/@baixf-xyz.readme)<br/>
 
->借鉴了[北岛向南的小屋](https://javef.github.io/)的头像样式
+![](https://visitor-badge.glitch.me/badge?page_id=baixf-xyz.readme)
 
-### 效果图
-
->静态图
-
-![主页JPG](./img/home.jpg)
-
->动态图
-
-![主页GIF](./img/home.gif)
-
-### 注
-
-- 访问地址：[个人主页](http://i.dmego.cn/)
-- 使用了 [一言](http://hitokoto.cn/) 的 API 服务
-- ~~使用了 [Bing 壁纸 API](https://github.com/xCss/bing/) 服务~~
-- ~~使用了 [Yahoo Query Language (YQL)](https://developer.yahoo.com/yql/) 来解决获取 Bing 壁纸跨域问题~~
-- ~~原先 YQL 服务将被淘汰，现改用 [JsonBird](https://bird.ioliu.cn/)~~
-- 使用 `GitHub Action` 来获取 Bing 壁纸，使用 `JSONP` 获取 Bing 壁纸 URL 文件
-
-### GitHub Action 补充说明
-
-- 利用 `Github Action` 提交代码需要一个 `GitHub API` 令牌, 可以在[Create Tokens](https://github.com/settings/tokens)这个地址，点击 `Generate new token`按钮来创建
-  - `Expiration` 过期时间设置为 `not expiration`
-  - `Select scopes` 勾选 `repo`
-  - 点击 `Generate Token` 生成
-- 在仓库的 `Settings` ——>`Secrets` 功能栏中，点击 `new repository secrets` 按钮
-  -  在 `Name` 框中填写 `GH_TOKEN`
-  - 在 `Value` 栏中填写第一步生成的 `token` 值
+![info](https://github-readme-stats.vercel.app/api?username=baixf-xyz&show_icons=true&count_private=true&hide=prs&theme=default_repocard)
 
 
-### 更新时间
 
->2021-11-25
+[![](https://img.shields.io/badge/OS-Linux-blue?style=flat-square&logo=arch-linux&logoColor=ffffff)](https://www.archlinux.org/)
+[![](https://img.shields.io/badge/-Raspberry%20Pi%20%204B-red?style=plastic-square&logo=Raspberry-Pi&logoColor=ffffff)](https://www.raspberrypi.org/)
+[![](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=ffffff)](https://reactjs.org/)
+[![](https://img.shields.io/badge/-C-inactive?style=flat-square&logo=C&logoColor=ffffff)](https://reactjs.org/)
+[![](https://img.shields.io/badge/-Python-blue?style=flat-square&logo=Python&logoColor=ffffff)](https://www.python.org/)
+[![](https://img.shields.io/badge/-Spring-green?style=flat-square&logo=Spring&logoColor=ffffff)](https://spring.io/)
+[![](https://img.shields.io/badge/-Markdown-inactive?style=flat-square&logo=Markdown&logoColor=ffffff)](https://markdown-here.com)
+[![](https://img.shields.io/badge/-LaTeX-green?style=flat-square&logo=LaTeX&logoColor=ffffff)](https://www.latex-project.org/)
+[![](https://img.shields.io/badge/Honor-V10-f5010c?style=flat-square&logo=huawei&logoColor=ffffff)](https://www.huawei.com/)
+
+[![](https://img.shields.io/badge/-Adobe-red?style=flat-square&logo=Adobe&logoColor=ffffff)](https://www.adobe.com)
+[![](https://img.shields.io/badge/-Adobe%20Photoshop-blue?style=flat-square&logo=Adobe-Photoshop&logoColor=ffffff)](https://www.adobe.com/cn/products/photoshop.html)
+[![](https://img.shields.io/badge/-Adobe%20Illustrator-orange?style=flat-square&logo=Adobe-Illustrator&logoColor=ffffff)](https://www.adobe.com/cn/products/illustrator.html)
+[![](https://img.shields.io/badge/-Adobe%20Lightroom%20CC-blue?style=flat-square&logo=Adobe-Lightroom-CC&logoColor=ffffff)](https://www.adobe.com/cn/products/photoshop-lightroom-classic.html)
+[![](https://img.shields.io/badge/-Adobe%20Premiere%20Pro-blueviolet?style=flat-square&logo=Adobe-Premiere-Pro&logoColor=ffffff)](https://www.adobe.com/cn/products/premiere.html)
+[![](https://img.shields.io/badge/-Adobe%20After%20Effects-informational?style=flat-square&logo=Adobe-After-Effects&logoColor=ffffff)](https://www.adobe.com/cn/products/aftereffects.html)
+[![](https://img.shields.io/badge/-Adobe%20Audition-blue?style=flat-square&logo=Adobe-Audition&logoColor=ffffff)](https://www.adobe.com/cn/products/audition.html)
+
+
+
+
+
+
+
