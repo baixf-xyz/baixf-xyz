@@ -40,7 +40,6 @@
 
 [原作者主页](http://i.dmego.cn/)
 
-![img](https://avatars.githubusercontent.com/u/22118976?v=4) 
 
 ### GitHub Action 补充说明
 
