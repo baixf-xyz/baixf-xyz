@@ -8,7 +8,7 @@
 
 ![](https://api.moedog.org/count/@baixf-xyz.readme)<br/>
 
-![](https://visitor-badge.glitch.me/badge?page_id=baixf-xyz.readme)
+<!--![](https://visitor-badge.glitch.me/badge?page_id=baixf-xyz.readme)-->
 
 ![info](https://github-readme-stats.vercel.app/api?username=baixf-xyz&show_icons=true&count_private=true&hide=prs&theme=default_repocard)
 
