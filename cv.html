@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+/* 
+ *   Lapis CV  /  Author - YiNN (BingyanStudio)
+ *   https://github.com/BingyanStudio/LapisCV
+ */
+
+/* Text */
+
+a,
+a span {
+    font-family: var(--link-font);
+}
+
+code {
+    font-family: var(--code-font);
+}
+
+p,
+li {
+    font-family: "LapisCV Icon", var(--text-font);
+    font-size: var(--text-size);
+    line-height: var(--line-height);
+    color: var(--text-normal);
+}
+
+/* Title */
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    font-family: "LapisCV Icon", var(--title-font);
+}
+
+h1 {
+    font-size: var(--h1-size);
+    color: var(--h1-color);
+    line-height: 1.5;
+    border-bottom: 0;
+}
+
+h1,
+blockquote p {
+    text-align: center;
+}
+
+h2 {
+    color: var(--h2-color);
+    font-size: var(--h2-size);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-accent), rgb(0 0 0 / 0) 60%);
+    margin-top: 2.4mm !important;
+    margin-bottom: 1.9mm !important;
+    line-height: 1;
+    padding: 1mm 0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: var(--h3-color);
+    line-height: 1.8;
+    font-size: var(--h3-size);
+}
+
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: normal;
+    font-size: var(--h3-size) - 0.5pt;
+}
+
+.md-math-block,
+.md-rawblock,
+h1,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+li p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media print {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+    }
+}
+
+strong {
+    color: var(--text-strong);
+}
+
+/* List */
+
+ul {
+    list-style-type: '\2022';
+    padding-inline-start: 3mm;
+    padding-inline-end: 1mm;
+}
+
+ol {
+    padding-inline-start: 5mm;
+    padding-inline-end: 1mm;
+}
+
+ol li {
+    padding-left: 0;
+}
+
+ol,
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+li {
+    padding-left: 1.5mm;
+}
+
+ul ::marker {
+    font-weight: bolder;
+}
+
+ol ::marker {
+    font-weight: normal;
+}
+
+/* Avatar */
+
+.avatar,
+img[alt="avatar"] {
+    display: block;
+    position: relative;
+    top: 1mm;
+    right: 0;
+    z-index: 9999;
+    float: right;
+    object-fit: cover;
+    overflow: hidden;
+
+    width: var(--avatar-width);
+    height: var(--avatar-width);
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 0 3mm var(--background-primary);
+    margin: 0 0 0 3mm;
+}
+
+p:has(.avatar, img[alt="avatar"]) {
+    height: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Link */
+
+a {
+    color: var(--link-color);
+    filter: brightness(1.3) hue-rotate(-10deg);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* Code */
+
+code {
+    background-color: var(--background-primary);
+    color: var(--text-normal) !important;
+    font-size: var(--text-size);
+}
+
+/* Block Quote */
+
+blockquote,
+blockquote * {
+    line-height: 1.6;
+    padding: 0;
+    border-inline-start: none !important;
+    font-size: var(--blockquote-size);
+}
+
+blockquote a {
+    color: var(--text-normal) !important;
+}
+
+/* Custom Class */
+
+.entry-title,
+div[alt="entry-title"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon,
+span[alt="icon"] {
+    color: var(--color-accent);
+}
+
+/* Horizontal Line */
+
+hr {
+    border-top: 2px solid #dae3eac9;
+    border-bottom: none;
+    margin: 15mm 0 12mm 0;
+}
+
+@media print {
+    hr {
+        page-break-after: always;
+        margin: 0;
+        visibility: hidden;
+    }
+}/* 
+ *   Lapis CV Serif  /  Author - YiNN (BingyanStudio)
+ *   https://github.com/BingyanStudio/LapisCV
+ */
+
+@import "";
+
+body,
+:root {
+
+    /* Custom Configs */
+
+    --text-size: 9.5pt;
+    --line-height: 1.8;
+    --avatar-width: 24mm;
+
+    --h1-size: 25pt;
+    --h2-size: 13pt;
+    --h3-size: 11pt;
+    --blockquote-size: 9.3pt;
+
+    --text-font: 'SourceHanSansCN';
+    --title-font: 'SourceHanSerifCN';
+    --link-font: 'JetBrainsMono';
+    --code-font: 'JetBrainsMono';
+
+    --color-accent: #4870ad;
+    --text-normal: #353a42;
+    --link-color: var(--color-accent);
+    --text-strong: #121418;
+    --h1-color: var(--text-normal);
+    --h2-color: var(--color-accent);
+    --h3-color: var(--text-normal);
+    --h4-color: var(--text-normal);
+    --border-color: #dae3ea;
+    --background-primary: #fff;
+}
+
+/* Font Face */
+
+@media screen {
+    #write {
+        top: 10mm !important;
+        max-width: 224mm;
+        box-shadow: 0 0 4mm 0 #a7bbc969;
+        padding-left: 20mm;
+        padding-right: 20mm;
+        padding-top: 15mm;
+    }
+
+    ::before {
+        color: var(--color-accent);
+    }
+}
+
+h1 {
+    padding: 1mm 0 0 0;
+    margin: 3mm 1mm 0 1mm;
+}
+
+h1,
+blockquote p {
+    text-align: left;
+}
+
+h2 {
+    padding: 1.2mm 0;
+}
+
+.avatar,
+img[alt="avatar"] {
+    display: block;
+    position: absolute;
+    box-shadow: none;
+    border: none;
+    top: -25mm;
+    right: 1mm;
+}
+
+blockquote {
+    margin: 0 1mm 6mm 1mm;
+}
+
+blockquote p {
+    line-height: 1.5;
+}
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>杨洪利</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='杨洪利'><span>杨洪利</span></h1><p>&nbsp;</p><blockquote><p><span alt="icon"><span>📞</span></span><span> </span><code>17860271144</code>&emsp;&emsp;<span> </span><span alt="icon"><span>✉️</span></span><span> </span><code>hongli@stu.xju.edu.cn</code>&emsp;&emsp;<span> </span><span alt="icon"><span>📒</span></span><span> </span><a href='https://baixf-xyz.github.io'><span>个人主页</span></a></p></blockquote><p><img alt="avatar" src="https://raw.githubusercontent.com/baixf-xyz/PicGo-oss/refs/heads/master/202506031246608.jpg?token=GHSAT0AAAAAAC3VIWJCHTHBYAOJBZFMYGGK2B6WM2A"></p><h2 id='🎓教育经历'><span>🎓教育经历</span></h2><div alt="entry-title">
+  <h3>新疆大学（211 双一流）- 硕士 - 计算机科学与技术 (081200)（2022.09 - 2025.06）</h3>
+</div><ul><li><p><span>导师：黄浩教授，新疆多语种信息技术重点实验室  </span></p></li><li><p><span>研究方向：多语言语音识别、大模型、迁移学习、提示工程、语音合成  </span></p></li><li><p><span>专业成绩：GPA 85.5/100（专业前20%）  </span></p></li><li><p><span>主修课程包括：计算机科学与技术数学基础、矩阵分析、高级算法分析与设计、高级软件工程、机器学习、自然语言处理、深 度学习、人工智能原理及应用等</span></p></li></ul><div alt="entry-title">
+  <h3>青岛科技大学 - 本科 - 计算机科学与技术（数据分析与应用方向）（2018.09 - 2022.06）</h3>
+</div><ul><li><p><span>GPA 2.92/4.00  </span></p></li><li><p><span>主修课程包括：C语言程序设计、Java程序设计、Web前端开发技术、Linux 系统应用、Python 程序设计、数据库原理、数据采 集与存储、大数据处理、数据分析技术、大数据开发、数据可视化、遥感数字图像处理、人工智能等</span></p></li></ul><h2 id='实习经历'><span>实习经历</span></h2><div alt="entry-title">
+  <h3>研究助理（语音语义大数据实验室） - 深圳市大数据研究院（2023.07 - 2024.03）</h3>
+</div><ul><li><p><span>指导老师：李海洲教授  </span></p></li><li><p><span>参与语音技术相关研究，协助语音识别系统的开发与模型分析</span></p></li></ul><div alt="entry-title">
+  <h3>交流学生（线上）- 南洋理工大学 Tesemak 实验室（2023.06 - 2024.06）</h3>
+</div><ul><li><p><span>指导老师：Eng Siong Chng 教授  </span></p></li><li><p><span>跟踪语音大模型方向的研究前沿，参与相关科研项目交流</span></p></li></ul><div alt="entry-title">
+  <h3>教学助理 - 虚拟仿真综合实验实训中心，青岛科技大学（2019.04 - 2021.06）</h3>
+</div><ul><li><p><span>协助教学系统维护，参与软硬件安装和实验环境管理</span></p></li></ul><h2 id='项目经历'><span>项目经历</span></h2><h3 id='邮电多语言语音识别智能眼镜开发202503---202506'><span>邮电多语言语音识别智能眼镜开发（2025.03 - 2025.06）</span></h3><ul><li><p><span>训练语种识别模型，协助部署流式语音识别模型</span></p></li></ul><h3 id='类脑听觉注意力理论与工程化实践202307---202404'><span>类脑听觉注意力理论与工程化实践（2023.07 - 2024.04）</span></h3><ul><li><p><span>设计基于眼动仪的视觉注意力辅助系统，支持听力障碍人群识别目标说话者语音  </span></p></li></ul><h3 id='复杂声学场景下的语音内容审核关键技术研究202210---202312'><span>复杂声学场景下的语音内容审核关键技术研究（2022.10 - 2023.12）</span></h3><ul><li><p><span>使用语音分离、识别等手段进行语音关键词检索，提升内容审核效率</span></p></li></ul><h3 id='科技创新-2030-新一代人工智能重大项目202210---202401'><span>科技创新 2030 “新一代人工智能”重大项目（2022.10 - 2024.01）</span></h3><ul><li><p><span>多语言语音识别方向，涵盖低资源与富语种语音识别</span></p></li></ul><h2 id='📚-发表论文'><span>📚 发表论文</span></h2><ul><li><p><strong><span>Listen to the Speaker in Your Gaze</span></strong><span></span><br/><em><strong><span>Hongli Yang</span></strong></em><span>, Xinyi Chen, Junjie Li, Siqi Cai, Hao Huang, Haizhou Li</span><br/><em><span>11th IEEE International Conference on Cybernetics and Intelligent Systems and the 11th IEEE International Conference on Robotics, Automation and Mechatronics(CIS-RAM 2024)</span></em></p></li><li><p><strong><span>CB-PSR: Adaptive Contextual Biasing for Prompt-driven Speech Recognition</span></strong><span></span><br/><em><strong><span>Hongli Yang</span></strong></em><span>, Ziyuan Chen, Haowen Yin, Hao Huang</span><br/><em><span>21st International Conference on Intelligent Computing (ICIC 2025)</span></em></p></li><li><p><strong><span>Adapting Whisper for Parameter-efficient Code-Switching Speech Recognition via Soft Prompt Tuning</span></strong><span></span><br/><strong><em><span>Hongli Yang</span></em><span>,</span></strong><span> Yizhou Peng, Hao Huang, Sheng Li</span><br/><em><span>26th Annual Conference of the International Speech Communication Association(Interspeech 2025)</span></em></p></li><li><p><strong><span>Language-Aware Prompt Tuning for Parameter-Efficient Seamless Language Expansion in Multilingual ASR</span></strong><span></span><br/><em><strong><span>Hongli Yang</span></strong></em><span>, Sheng Li, Hao Huang, Ayiduosi Tuohan, Yizhou Peng</span><br/><em><span>26th Annual Conference of the International Speech Communication Association(Interspeech 2025)</span></em></p></li><li><p><strong><span>Robust and Efficient Text-based Speech Editing using Noise Conditioning and Rectified Flow</span></strong><span></span><br/><span>Haowen Yin, Kai Wang, </span><em><strong><span>Hongli Yang</span></strong></em><span>, Hao Huang, Wushour Silamu</span><br/><em><span>2025 International Conference on Acoustics, Speech, and Signal Processing(ICASSP 2025)</span></em></p></li></ul><h2 id='🛠-专业技能'><span>🛠 专业技能</span></h2><ul><li><p><span>编程语言：Python、C、Shell、SQL  </span></p></li><li><p><span>技术框架与工具：PyTorch、Kaldi、Spark、MongoDB、ELK Stack、Jupyter  </span></p></li><li><p><span>熟悉自然语言处理、语音识别、深度学习、模型调优  </span></p></li><li><p><span>掌握数据采集、分析、可视化及模型评估流程  </span></p></li><li><p><span>英语六级（CET-6），普通话二级乙等</span></p></li></ul><h2 id='🏅-荣誉奖励'><span>🏅 荣誉奖励</span></h2><ul><li><p><span>全国大学生数学建模竞赛省一等奖  </span></p></li><li><p><span>“互联网+”“创青春”计算机软硬件组装类大赛三等奖  </span></p></li><li><p><span>自治区学业奖学金、科技创新奖学金、道德风尚奖学金、社会实践奖学金  </span></p></li><li><p><span>优秀志愿者、学生会优秀干事、文艺体育积极分子等</span></p></li></ul><h2 id='💼-校园活动'><span>💼 校园活动</span></h2><ul><li><p><span>青岛科技大学 学生工作助理委员会 宣传部部长（2019.09 - 2020.06）  </span></p></li><li><p><span>校团委社团管理部 素拓部部长（2019.09 - 2020.09）  </span></p></li><li><p><span>山东蒙阴大学生实践锻炼夏令营成员（2019.07 - 2019.08）</span></p></li></ul></div></div>
+</body>
+</html>
