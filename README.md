@@ -3,26 +3,12 @@
 ### Welcome To My Github 👋
 
 <div align="center">
-
-  <!-- dynamic typing effect 动态打字效果 -->
-  <div>
-    <a href="https://blog.tgmeng.com/">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=console.log(%22Hello%2C%20World%22);小马同学祝您今天愉快!&center=true&size=27" />
-    </a>
-  </div>
-
-  <!-- knock code pictures 敲代码的图片 -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/CandyDream6/jsdelivr/github/gif/coding.gif" />
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/CandyDream6/jsdelivr/github/image/developer.svg" height="225px" />
     <img src="https://cdn.jsdelivr.net/gh/CandyDream6/jsdelivr/github/gif/coding.gif" />
   </picture>
-
-  <!-- for beauty 留个空行好看点 -->
-  <div>&nbsp;</div>
-
-  <!-- profile logo 个人资料徽标 -->
-  <div>
+</div>
 
 #### You can catch me:
 
@@ -33,8 +19,6 @@
 <!--![](https://visitor-badge.glitch.me/badge?page_id=baixf-xyz.readme)-->
 
 ![info](https://github-readme-stats.vercel.app/api?username=baixf-xyz&show_icons=true&count_private=true&hide=prs&theme=default_repocard)
-
-<!-- ########################################## 分割 ########################################## -->
 
 <div align="center" >
   <img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
@@ -127,7 +111,7 @@
 
 ## Thanks
 
-[原作者主页](http://i.dmego.cn/)
+[1️⃣原作者主页](http://i.dmego.cn/) [2️⃣原作者主页](https://github.com/CandyDream6) 
 
 
 ### GitHub Action 补充说明
